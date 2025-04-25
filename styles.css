@@ -1,0 +1,477 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a3c4dc;
+    margin: 0;
+    text-align: center;
+}
+
+.navbar {
+    background-color: #1a1a2e;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.header {
+    font-size: 48px;
+    color: white;
+    margin-top: 30px;
+}
+
+.content {
+    margin-top: 4-100px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+   
+}
+
+.finnish-history, .moomin-history, .moose-hunting {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+.helsinki-city, .oulu-city, .tampere-city, .espoo-city {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.image-container img {
+    max-width: 300px; 
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        height: auto;
+        font-size: 18px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}
+
+.content-box {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.page-header {
+    background-color: #a3c4dc;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.page-header h1 {
+    color: white;
+    font-size: 48px;
+    margin: 0;
+}
+
+
+============================= 
+  SUPPORT SERVICES STYLING 
+============================= 
+
+.city h2 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.category h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #1a5276;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.category ul {
+    margin: 0;
+    padding-left: 20px;
+    line-height: 1.6;
+    font-size: 15px;
+    color: #333;
+}
+
+.city {
+    background-color: #fff;
+    padding: 20px 25px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    border-left: 5px solid #a3c4dc;
+}
+
+.category {
+    margin-bottom: 18px;
+}
+
+.category h3 {
+    line-height: 1.4;
+}
+
+body {
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.notice {
+    background-color: #fff8e1;
+    border-left: 6px solid #f4a261;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #444;
+}
+
+.city-links {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.city-links p {
+    margin: 0 0 10px;
+    font-size: 16px;
+}
+
+.city-buttons a {
+    display: inline-block;
+    margin: 0 8px;
+    padding: 8px 14px;
+    background-color: #e0ecf5;
+    color: #1a5276;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+.city-buttons a:hover {
+    background-color: #c2d8e8;
+}
+
+.back-to-top {
+    text-align: center;
+    margin: 40px 0 20px;
+}
+
+.back-to-top a {
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: #a3c4dc;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.back-to-top a:hover {
+    background-color: #88b0d2;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+form {
+  max-width: 400px;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  width: 100px;
+}
+
+.form-group input {
+  flex: 1;
+}
+.city-support {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.city-support h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.city-support h4 {
+  font-size: 1.2em;
+  margin: 10px 0 5px;
+  color: #555;
+}
+
+.service-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.service-list li {
+  margin-bottom: 1em;
+}
+
+.service-list ul {
+  list-style-type: disc;
+  padding-left: 1.5em;
+  margin-top: 5px;
+}
+
+.service-list ul li {
+  margin-bottom: 0.3em;
+}
+
+============================= 
+     CONTACT STYLING 
+============================= 
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  width: 100px;
+  padding-top: 6px;
+}
+
+.form-group input,
+.form-group textarea {
+  flex: 1;
+  padding: 6px;
+  font-family: inherit;
+  font-size: 1em;
+}
+
+============================= 
+     CITIES STYLING 
+=============================
+
+body {
+  background-color: #cbe5f6; 
+  margin: 0;
+}
+
+.site-header {
+  background-color: #1a1a2e; 
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 1.8em;
+  color: white;
+}
+
+.site-header p {
+  margin: 0;
+  font-style: italic;
+  font-size: 0.9em;
+  color: white;
+}
+
+
+.main-nav {
+  background-color: #1a1a2e;
+  padding: 10px 0;
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 1.05em;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #6dd5ed;
+}
+
+.page-title {
+  color: white;
+  font-family: 'Segoe UI', 'Roboto', sans-serif; 
+  font-weight: normal;
+  font-size: 48px;
+  letter-spacing: 1px; 
+}
+
+============================= 
+     HOMEPAGE STYLING
+=============================
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; 
+}
+
+.site-header, .main-nav {
+  background-color: #1a1a2e;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.spacer {
+  height: 40rem;
+  width: 100%;
+}
+
+.scroll-gallery {
+  background-color: #f5f5f5;
+  padding: 0.2rem;
+  text-align: center;
+}
+
+.scroll-gallery h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding-bottom: rem;
+}
+
+.card {
+  min-width: 200px;
+  max-height: 80px;
+  flex-shrink: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+.card p {
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.homepage {
+    background-image: url('images/Finlandbackground.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
