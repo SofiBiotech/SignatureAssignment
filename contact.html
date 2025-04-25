@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Finland Travel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <h1>Tour Finland</h1>
+  <p>by Sofi Sprague</p>
+</header>
+
+<nav class="main-nav">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Information.html">Information</a></li>
+    <li><a href="Cities.html">Cities</a></li>
+    <li><a href="support.html">Support</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="header">Contact Us!</div>
+
+<main>
+    <div class="content-box">
+        <h2>Contact Information</h2>
+        <p>Fill out your information below and we’ll get back to you shortly.</p>
+        <form>
+  <div class="form-group">
+    <label for="name">First Name:</label>
+    <input type="text" name="name" id="name" required>
+  </div>
+
+  <div class="form-group">
+    <label for="city">City:</label>
+    <input type="text" name="city" id="city" required>
+  </div>
+
+  <div class="form-group">
+    <label for="zip">ZIP Code:</label>
+    <input type="text" name="zip" id="zip" required>
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" required>
+  </div>
+
+  <div class="form-group">
+   <label for="message">Message:</label>
+   <textarea id="message" name="message" rows="5" required></textarea>
+  </div>
+
+  <input type="submit" value="Submit">
+</form>
+    </div>
+</main>
+<script>
+document.querySelector("form").addEventListener("submit", function(e) {
+    let form = e.target;
+
+    // input elements
+    let nameInput = form.querySelector("input[name='name']");
+    let emailInput = form.querySelector("input[name='email']");
+    let cityInput = form.querySelector("input[name='city']");
+    let zipInput = form.querySelector("input[name='zip']");
+
+    // Convert specific fields to uppercase
+    if (nameInput) nameInput.value = nameInput.value.toUpperCase();
+    if (cityInput) cityInput.value = cityInput.value.toUpperCase();
+
+    // Email validation
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(emailInput.value)) {
+        alert("Please enter a valid email address.");
+        e.preventDefault();
+        return;
+    }
+
+    // ZIP code validation (5 digits)
+    const zipPattern = /^\d{5}$/;
+    if (!zipPattern.test(zipInput.value)) {
+        alert("Please enter a valid 5-digit ZIP code.");
+        e.preventDefault();
+        return;
+    }
+});
+</script>
+</body>
+</html>
